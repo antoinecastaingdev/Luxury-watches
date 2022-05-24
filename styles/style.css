@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #24262A;
+}
+
+
+.header {
+    width: 100%;
+    padding: 1em 10%;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.burger-container {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.burger {
+    position: absolute;
+    height: 3px;
+    border-radius: 9px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.burger1 {
+    top: 0;
+}
+
+.burger2 {
+    top: ;
+}
+
+.header-logo {
+
+}
+
+.header-icons-container {
+
+}
+
+.header-user-icon,
+.header-cart-icon {
+    height: 35px;
+    width: 35px;
+    color: white;
+}
