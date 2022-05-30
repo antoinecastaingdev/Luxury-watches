@@ -1,61 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
 }
 
 body {
     background: #24262A;
 }
 
+/* Header */
 
 .header {
     width: 100%;
-    padding: 1em 10%;
+    padding: 2em 10%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
 }
 
 .header-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
 }
 
+.navigation-container {
+    position: absolute;
+    visibility: hidden;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style: none;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
 .burger-container {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 35px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .burger {
-    position: absolute;
-    height: 3px;
+    height: 2px;
     border-radius: 9px;
     width: 100%;
     background: rgb(255, 255, 255);
 }
 
-.burger1 {
-    top: 0;
-}
-
-.burger2 {
-    top: ;
+.header-logo-link {
+    cursor: pointer;
 }
 
 .header-logo {
-
+    filter: invert(100%);
+    height: 90px;
 }
 
 .header-icons-container {
+    display: flex;
+    column-gap: 1.5em;
+}
 
+.header-user-icon-link {
+    cursor: pointer;
 }
 
 .header-user-icon,
 .header-cart-icon {
     height: 35px;
     width: 35px;
-    color: white;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    padding: 2em 10%;
+    background: black;
+}
+
+.footer-container {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row-reverse;
 }

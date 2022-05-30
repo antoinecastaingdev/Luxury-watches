@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <script src="../scripts/products.js" defer></script>
+    <title>Collection</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <div class="header-container" id="header-container">
+
+        <div class="burger-container" id="burger-container">
+            <div class="burger burger1" id="burger1"></div>
+            <div class="burger burger2" id="burger2"></div>
+            <div class="burger burger3" id="burger3"></div>
+        </div>
+
+        <a href="index.html" class="header-logo-link" id="header-logo-link">
+
+            <img src="../assets/icons/FTA (5) (1).png" alt="Logo de FTA" class="header-logo" id="header-logo">
+            
+        </a>
+
+        <div class="header-icons-container" id="header-icons-container">
+
+            <a href="#" class="header-user-icon-link" id="header-user-icon-link">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="header-user-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+            </a>
+
+            <div class="shopping-container" id="shopping-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="header-cart-icon" id="header-cart-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <div class="shopping-div" id="shopping-div"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </header>
+
+    <main>
+
+        <section class="top-section" id="top-section">
+
+            <img src="../assets/pictures-videos/top-section/top-section-products.jpg" alt="Photo de montre" class="top-section-background">
+
+            <h1 class="top-section-title" id="top-section-title">NOTRE COLLECTION</h1>
+        </section>
+
+        <!-- Products section -->
+
+        <section class="products-section" id="products-section">
+            <div class="filter-products-container" id="filter-products-container">
+
+                <div class="filter-container" id="filter-container">
+
+                    <div class="filter-title-icon-container" id="filter-title-icon-container">
+
+                        <h3 class="filter-title" id="filter-title">Filtres</h3>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="filter-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                        </svg>
+
+                    </div>
+
+                    <!-- model -->
+
+                    <div class="model-filter-container" id="model-filter-container">
+                        <h3 class="model-filter" id="model-filter">Modèle</h3>
+
+                        <div class="checkbox-model-container" id="checkbox-model-container">
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="checkbox1">
+                            </div>
+
+                            <div class="input-container">
+                                <input type="text" id="model-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- material -->
+
+                    <div class="material-filter-container" id="material-filter-container">
+                        <h3 class="material-filter" id="material-filter">Matériaux</h3>
+
+                        <div class="checkbox-material-container" id="checkbox-material-container">
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="checkbox2">
+                            </div>
+
+                            <div class="material-container">
+                                <p class="material" id="material1">Or</p>
+                                <p class="material" id="material2">Argent</p>
+                                <p class="material" id="material3">Or rose</p>
+                                <p class="material" id="material4">Nacre</p>
+                                <p class="material" id="material5">Cuir</p>
+                                <p class="material" id="material6">Diamant</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- color -->
+
+                    <div class="color-filter-container" id="color-filter-container">
+                        <h3 class="color-filter" id="color-filter">Couleur</h3>
+
+                        <div class="checkbox-color-container" id="checkbox-color-container">
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="checkbox3">
+                            </div>
+
+                            <div class="color-container">
+                                <div class="color" id="color1"></div>
+                                <div class="color" id="color2"></div>
+                                <div class="color" id="color3"></div>
+                                <div class="color" id="color4"></div>
+                                <div class="color" id="color5"></div>
+                                <div class="color" id="color6"></div>
+                                <div class="color" id="color7"></div>
+                                <div class="color" id="color8"></div>
+                                <div class="color" id="color9"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gender -->
+
+                    <div class="gender-filter-container" id="gender-filter-container">
+                        <h3 class="gender-filter" id="gender-filter">Genre</h3>
+
+                        <div class="checkbox-gender-container" id="checkbox-gender-container">
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="checkbox4">
+                            </div>
+
+                            <div class="gender-container">
+                                <button class="gender" id="gender1">Homme</button>
+                                <button class="gender" id="gender2">Femme</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- price -->
+
+                    <div class="price-filter-container" id="price-filter-container">
+                        <h3 class="price-filter" id="price-filter">Prix</h3>
+
+                        <div class="checkbox-price-container" id="checkbox-price-container">
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="checkbox5">
+                            </div>
+
+                            <div class="price-container">
+                                <input type="number" class="price" id="price1">
+                                <input type="number" class="price" id="price2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-toggle-container">
+                        <button class="filter-toggle" id="filter-toggle">Filtrer</button>
+                    </div>
+
+                </div>
+
+                <div class="products-container" id="products-container">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <p>FTA© All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
