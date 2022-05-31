@@ -57,23 +57,22 @@ for (let i = 0; i < productCardList.length; i++) {
         <button class="product-card-button" id="button${i}">Acheter</button>
     </div>
     `;
-    const button = document.getElementById(`button${i}`);
-    console.log(button);
-    button.addEventListener("click", () => {
-        console.log(button);
-    });
-    // button.addEventListener('click', () => {
-    //     // shoppingDiv.innerHTML += `
-    //     // <div class="product-card" id="card${i}">
-    //     //     <img src="${productCardList[i].picture}" alt="Photo d'une montre" class="card-picture">
-    //     //     <h3 class="product-card-title">${productCardList[i].name}</h3>
-    //     //     <p class="card-price">${productCardList[i].price}€</p>
-    //     // </div>
-    //     // `;
-    //     // console.log('hello');
-    //     console.log(button);
-    // })
+}
 
+for (let i = 0; i < productCardList.length; i++) {
+    const button = document.getElementById(`button${i}`);
+    button.addEventListener('click', () => {
+        console.log("hello");
+        shoppingDiv.innerHTML += `
+        <div class="bought-card">
+            <img src="${productCardList[i].picture}" alt="Photo d'une montre" class="bought-card-picture">
+            <div class="bought-card-title-price">
+                <h3 class="bought-card-title">${productCardList[i].name}</h3>
+                <p class="bought-card-price">${productCardList[i].price}€</p>
+            </div>
+        </div>
+        `;
+    })
 }
 
 
@@ -386,17 +385,32 @@ filterButton.addEventListener('click', () => {
 
     //     if (isMaterial && )
     // }
-    productsContainer.innerHTML = ``;
-    let productsCardList2 = [watch5, watch6, watch7, watch15];
-    for (let i = 0; i < productsCardList2.length; i++) {
-        productsContainer.innerHTML += `
-        <div class="product-card" id="card${i}">
-        <img src="${productsCardList2[i].picture}" alt="Photo d'une montre" class="card-picture">
-        <h3 class="product-card-title">${productsCardList2[i].name}</h3>
-        <p class="card-price">${productsCardList2[i].price}€</p>
-        <button class="product-card-button" id="button${i}">Acheter</button>
-    </div>
-    `;
+    if (material1.style.background === "rgb(1, 117, 255)") {
+        productsContainer.innerHTML = ``;
+        let productsCardList2 = [watch5, watch6, watch7, watch15];
+        for (let i = 0; i < productsCardList2.length; i++) {
+            productsContainer.innerHTML += `
+            <div class="product-card" id="card${i}">
+            <img src="${productsCardList2[i].picture}" alt="Photo d'une montre" class="card-picture">
+            <h3 class="product-card-title">${productsCardList2[i].name}</h3>
+            <p class="card-price">${productsCardList2[i].price}€</p>
+            <button class="product-card-button" id="button${i}">Acheter</button>
+        </div>
+        `;
+        }
+    } else {
+        productsContainer.innerHTML = ``;
+        let productsCardList2 = [watch1, watch2, watch3, watch4, watch5, watch6, watch7, watch8, watch9, watch10, watch11, watch12, watch13, watch14, watch15, watch16, watch17, watch18, watch19, watch20];
+        for (let i = 0; i < productsCardList2.length; i++) {
+            productsContainer.innerHTML += `
+            <div class="product-card" id="card${i}">
+            <img src="${productsCardList2[i].picture}" alt="Photo d'une montre" class="card-picture">
+            <h3 class="product-card-title">${productsCardList2[i].name}</h3>
+            <p class="card-price">${productsCardList2[i].price}€</p>
+            <button class="product-card-button" id="button${i}">Acheter</button>
+        </div>
+        `;
+        }
     }
 })
 
@@ -416,9 +430,9 @@ const checkbox1 = document.getElementById('checkbox1');
 
 
 shoppingIcon.addEventListener('click', () => {
-    if (shoppingDiv.style.opacity === "1") {
-        shoppingDiv.style.opacity = "0";
+    if (shoppingDiv.style.visibility === "visible") {
+        shoppingDiv.style.visibility = "hidden";
     } else {
-        shoppingDiv.style.opacity = "1";
+        shoppingDiv.style.visibility = "visible";
     }
 })

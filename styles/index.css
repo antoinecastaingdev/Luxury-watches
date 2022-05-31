@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hero-section-background-video {
@@ -38,13 +39,109 @@
     cursor: pointer;
 }
 
+/* Carousel section */
+
+.carousel-section {
+    width: 100%;
+    padding: 5em 2em;
+}
+
+.carousel-section-container {
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2em;
+    overflow-x: scroll;
+}
+
+.carousel {
+    display: flex;
+    margin-bottom: 1em;
+    width: 2000px;
+    margin: auto;
+}
+
+.carousel-section-container::-webkit-scrollbar {
+    background: transparent;
+    height: 4px;
+}
+
+.carousel-section-container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.carousel-section-container:hover::-webkit-scrollbar-thumb {
+    background: goldenrod;
+}
+
+.carousel-card {
+    width: 30%;
+    margin: 0 1em;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.carousel-card-picture {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.carousel-left-button {
+    padding: .5em 1em;
+    border: none;
+    background: #24262A;
+    cursor: pointer;
+}
+
+.carousel-right-button {
+    padding: .5em 1em;
+    margin-top: 4em;
+    border: none;
+    background: #24262A;
+    cursor: pointer;
+}
+
+.carousel-card-name {
+    font-weight: 200;
+}
+
+.carousel-card-text {
+    font-weight: 100;
+}
+
 /* Gender section */
 
 .gender-section {
     height: 100vh;
+    padding: 5em 10%;
+}
+
+.gender-section-container {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    text-decoration: none;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.gender-section-man-container {
+    border-bottom: 1px solid white;
+    background: black;
+}
+
+.gender-section-woman-container {
+    background: white;
+}
+
+.gender-section-woman-title {
+    color: #24262A;
 }
 
 .gender-section-man-container,
@@ -58,15 +155,38 @@
 
 .gender-section-man-title,
 .gender-section-woman-title {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
+    transition: all .3s ease;
+}
+
+.gender-section-picture-container img {
+    z-index: 3;
+    transition: all .3s ease;
 }
 
 .gender-section-picture-container,
 .gender-section-man-title,
 .gender-section-woman-title {
-    margin: 0 10%;
+    margin: 0 3em;
 }
+
+.gender-section-man-container:hover .gender-picture-man {
+    transform: translateX(-900px);
+}
+
+.gender-section-man-container:hover .gender-section-man-title {
+    transform: translateX(800px);
+}
+
+.gender-section-woman-container:hover .gender-picture-woman {
+    transform: translateX(900px);
+}
+
+.gender-section-woman-container:hover .gender-section-woman-title {
+    transform: translateX(-800px);
+}
+
 
 
 @keyframes arrow-animation {
@@ -103,7 +223,6 @@
 .trust-section-content-container {
     width: 100%;
     max-width: 1500px;
-    margin: auto;
     align-items: center;
     margin: 0 auto;
     padding: 4em 0;
@@ -157,9 +276,9 @@
 }
 
 .mecanism-section-container {
-    margin: auto;
+    margin: 0 10%;
     max-width: 1500px;
-    padding: 3em 0;
+    padding: 8em 0;
 }
 
 .mecanism-section-title {
@@ -264,18 +383,20 @@
 }
 
 .redirect-section-button {
-    background: green;
+    background: rgb(181, 143, 48);
     border: none;
     padding: 1em 2em;
     cursor: pointer;
     font-size: 15px;
-    border: 1px solid green;
+    border: 1px solid rgb(181, 143, 48);
     transition: all .3s ease;
+    border-radius: 3px;
 }
 
 .redirect-section-button:hover {
     background: transparent;
-    border: 1px solid green;
+    border: 1px solid rgb(181, 143, 48);
+    color: rgb(181, 143, 48);
 }
 
 .redirect-section-picture {
@@ -288,6 +409,12 @@
 @media screen and (max-width: 1500px) {
     .trust-section-card-container {
         margin: 0 10%;
+    }
+}
+
+@media  screen and (max-width: 1800px) {
+    .trust-section {
+        display: none;
     }
 }
 
