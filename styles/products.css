@@ -1,17 +1,63 @@
 .shopping-div {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    background: white;
+    background: rgba(0, 0, 0, 0.207);
+    backdrop-filter: blur(12px);
     position: absolute;
     top: 100px;
-    left: -75px;
-    height: 100px;
-    opacity: 0;
+    right: 10%;
+    visibility: hidden;
+    padding: 1em;
+    border-radius: 3px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.shopping-div::-webkit-scrollbar {
+    background: transparent;
+    width: 4px;
+}
+
+.shopping-div::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.shopping-div:hover::-webkit-scrollbar-thumb {
+    background: goldenrod;
 }
 
 .shopping-container {
     position: relative;
+}
+
+.bought-card {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.bought-card-picture {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.bought-card-title-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bought-card-title {
+    color: white;
+    font-weight: 300;
+    margin-bottom: .5em;
+    font-size: 24px;
+}
+
+.bought-card-price {
+    color: white;
 }
 
 /* Top section */
@@ -23,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .top-section-background {
@@ -37,6 +84,7 @@
 .top-section-title {
     font-weight: 100;
     font-size: 75px;
+    text-align: center;
 }
 
 /* Products section */
@@ -58,7 +106,7 @@
     top: 10%;
     display: flex;
     flex-direction: column;
-    background: whitesmoke;
+    background: #59637550;
     flex: 1;
     border-radius: 3px;
     height: 100%;
@@ -70,14 +118,12 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background: whitesmoke;
     border-radius: 3px;
     padding: 2em;
     gap: 1%;
 }
 
 .product-card {
-    background: rgb(217, 217, 217);
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -87,22 +133,27 @@
     cursor: pointer;
     transition: all .3s ease;
     border-radius: 6px;
-    border: 1px solid rgba(72, 72, 72, 0.239);
 }
 
-.product-card:hover {
-    transform: scale(1.02);
+.product-card:hover .card-picture {
+    transform: scale(1.05);
 }
 
 .product-card-button {
     opacity: 0;
-    background: rgb(0, 213, 0);
     color: white;
     padding: .5em 1em;
-    width: 100%;
+    width: 80%;
     border: none;
     cursor: pointer;
+    background: rgb(181, 143, 48);
+    border: 1px solid rgb(181, 143, 48);
     transition: all .3s ease;
+}
+
+.product-card-button:hover {
+    color: rgb(181, 143, 48);
+    background: transparent;
 }
 
 .product-card:hover .product-card-button {
@@ -110,7 +161,7 @@
 }
 
 .product-card-title {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .card-price {
@@ -122,6 +173,7 @@
     width: 100%;
     object-fit: cover;
     margin-bottom: 1em;
+    transition: all .3s ease;
 }
 
 /* Filtre */
@@ -138,12 +190,10 @@
 
 .filter-title {
     font-weight: 200;
-    color: black;
 }
 
 .filter-icon {
   height: 30px;
-  stroke: black;
 }
 
 /* Filtre modèle */
@@ -159,7 +209,6 @@
 
 .model-filter {
     font-weight: 200;
-    color: black;
 }
 
 #model-input {
@@ -212,7 +261,6 @@
 
 .material-filter {
     font-weight: 200;
-    color: black;
 }
 
 .checkbox-material-container {
@@ -256,7 +304,6 @@
 
 .color-filter {
     font-weight: 200;
-    color: black;
 }
 
 .checkbox-color-container {
@@ -332,7 +379,6 @@
 
 .gender-filter {
     font-weight: 200;
-    color: black;
 }
 
 .checkbox-gender-container {
@@ -376,7 +422,6 @@
 
 .price-filter {
     font-weight: 200;
-    color: black;
 }
 
 .checkbox-price-container {
@@ -422,3 +467,9 @@
     border-radius: 3px;
 }
 
+@media screen and (max-width: 1200px) {
+    .product-card {
+        width: 200px;
+    }
+    
+}

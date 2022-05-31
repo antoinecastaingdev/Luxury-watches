@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" type="image/png" href="../assets/icons/favicon-16x16.png">
     <script src="../scripts/script.js" defer></script>
     <script src="../scripts/index.js" defer></script>
-    <title>Document</title>
+    <title>Accueil</title>
 </head>
 <body>
     <header class="header" id="header">
@@ -87,27 +88,37 @@
 
         </section>
 
+        <section class="carousel-section" id="carousel-section">
+            <div class="carousel-section-container" id="carousel-section-container">
+                <div class="carousel" id="carousel"></div>
+            </div>
+        </section>
+
         <!-- Gender section -->
 
         <section class="gender-section" id="gender-section">
 
-            <div class="gender-section-man-container" id="gender-section-man-container">
+            <a href="products.html" class="gender-section-container" id="gender-section-container">
+                <div class="gender-section-man-container" id="gender-section-man-container">
 
-                <h3 class="gender-section-man-title">COLLECTION HOMME</h3>
+                    <h3 class="gender-section-man-title">COLLECTION HOMME</h3>
 
-                <div class="gender-section-picture-container">
-                    <img src="../assets/pictures-videos/men-women-collection/man-watch.png" alt="Montre pour homme">
+                    <div class="gender-section-picture-container">
+                        <img src="../assets/pictures-videos/men-women-collection/man-watch.png" alt="Montre pour homme" class="gender-picture-man">
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="gender-section-woman-container" id="gender-section-woman-container">
 
-                <div class="gender-section-picture-container">
-                    <img src="../assets/pictures-videos/men-women-collection//woman-watch.png" alt="Montre pour femme">
+                    <div class="gender-section-picture-container">
+                        <img src="../assets/pictures-videos/men-women-collection//woman-watch.png" alt="Montre pour femme" class="gender-picture-woman">
+                    </div>
+
+                    <h3 class="gender-section-woman-title">COLLECTION FEMME</h3>
+
                 </div>
-
-                <h3 class="gender-section-woman-title">COLLECTION FEMME</h3>
-
-            </div>
+            </a>
 
         </section>
 
@@ -236,7 +247,7 @@
 
                     <p class="redirect-section-paragraph" id="redirect-section-paragraph">Venez découvrir l'ensemble de notre collection.</p>
 
-                    <a href="#">
+                    <a href="../pages/products.html">
                         <button class="redirect-section-button" id="redirect-section-button">En savoir plus</button>
                     </a>
                 </div>
@@ -253,7 +264,7 @@
 
                     <p class="redirect-section-paragraph" id="redirect-section-paragraph">Tout les services disponibles pour vos achats.</p>
 
-                    <a href="#">
+                    <a href="../pages/services.html">
                         <button class="redirect-section-button" id="redirect-section-button">En savoir plus</button>
                     </a>
                 </div>
@@ -267,7 +278,7 @@
 
                     <p class="redirect-section-paragraph" id="redirect-section-paragraph">Tout sur notre marque, notre histoire, nos valeurs.</p>
 
-                    <a href="#">
+                    <a href="../pages/about.html">
                         <button class="redirect-section-button" id="redirect-section-button">En savoir plus</button>
                     </a>
                 </div>
@@ -280,11 +291,11 @@
                 <img src="../assets/pictures-videos/redirect-section/news-redirect.jpg" class="redirect-section-picture" id="redirect-section-picture">
 
                 <div class="redirect-section-text-container">
-                    <h3 class="redirect-section-title" id="redirect-section-title">Actualités</h3>
+                    <h3 class="redirect-section-title" id="redirect-section-title">Nous contacter</h3>
 
-                    <p class="redirect-section-paragraph" id="redirect-section-paragraph">Soyez les premiers au courant de nos dernières nouveautés.</p>
+                    <p class="redirect-section-paragraph" id="redirect-section-paragraph">Une question ? Notre service clientèle s'occupe de tout.</p>
 
-                    <a href="#">
+                    <a href="../pages/contact.html">
                         <button class="redirect-section-button" id="redirect-section-button">En savoir plus</button>
                     </a>
                 </div>
@@ -293,12 +304,18 @@
             
         </section>
 
+        <a href="index.html" class="back-to-top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+        </a>
+
 
 
     </main>
     <footer class="footer" id="footer">
         <div class="footer-container">
-            <p>FTA© All rights reserved.</p>
+            <p>FTA© Tous droits réservés.</p>
         </div>
     </footer>
 </body>

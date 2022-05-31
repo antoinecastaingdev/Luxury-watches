@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Main */
+
+.contact {
+    background-color: #24262A;
+}
+
+.contact div {
+    max-width: 1500px;
+}
+
+.container {
+    padding: 5% 10%;
+    margin: auto;
+}
+
+/* Hero section */
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+}
+
+.hero-section img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    /* filter: brightness(.5); */
+}
+
+.hero-section h1 {
+    font-size: 75px;
+    font-weight: 100;
+    padding-left: 10%;
+}
+
+/* Contact */
+
+h2 {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 24px;
+    padding: 1em 0;
+}
+
+p {
+    font-weight: 300;
+}
+
+.contain-contact {
+    display: flex;
+    padding: 2em 0;
+}
+
+/* Contact partie gauche */
+
+.contain-contact-left {
+    width: 50%;
+}
+
+.contain-contact-left a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+.contain-info-contact {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: .6em 0;
+}
+
+.network {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+.contain-contact-left a {
+    margin-right: 2em;
+}
+
+.w-6 {
+width: 35px;
+}
+
+/* Contact partie droite */
+
+.contain-contact-right {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    width: 50%;
+    font-size: 1em;
+    padding-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form textarea {
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    width: 80%;
+    font-size: 1em;
+    padding-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+.contain-contact-right a {
+    font-size: 18px;
+}
+
+iframe {
+    margin-top: 1.5em;
+}
+
+/* Responsive */
+
